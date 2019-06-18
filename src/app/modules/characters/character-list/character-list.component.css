@@ -1,0 +1,16 @@
+:host {
+    display: block;
+    padding-top: 20px;
+}
+
+.icon {
+    vertical-align: bottom;
+}
+
+.hero-cell {
+    margin-bottom: 40px;
+}
+
+.list-title {
+    margin-bottom: 30px;
+}

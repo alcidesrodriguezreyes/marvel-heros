@@ -1,0 +1,62 @@
+.hero-card {
+    position: relative;
+}
+
+.main-info {
+    display: flex;
+}
+
+.image {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    margin-top: -40px;
+    margin-left: -40px;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.info {
+    margin-top: -40px;
+    height: 100%;
+    width: 100%;
+    min-height: 280px;
+}
+
+.info p {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    width: calc(50% - 10px);
+    float: left;
+    margin-bottom: 10px;
+    overflow: hidden;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+}
+
+li:nth-child(2n) {
+    margin-left: 10px;
+}
+
+.related-comics {
+    margin-top: 20px;
+}

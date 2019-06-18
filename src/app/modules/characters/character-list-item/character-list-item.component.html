@@ -1,0 +1,28 @@
+<mat-card class="hero-card">
+  <div class="main-info">
+    <div class="image">
+        <img [src]="hero.thumbnail.path + '.' + hero.thumbnail.extension" loading="lazy" [alt]="hero.name" />
+    </div>
+    <div class="info">
+      <h4 class="title">{{hero.name}}</h4>
+      <p *ngIf="hero.description">
+        {{hero.description}}
+      </p>
+
+      <p *ngIf="!hero.description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu tempus justo. Aliquam quis imperdiet lorem. Morbi non accumsan tortor. Fusce mollis tellus vel enim blandit maximus. Sed gravida quam ac nisi cursus pretium. Duis vulputate fringilla nulla. Mauris placerat nulla eu eros porttitor, non efficitur velit pharetra.
+        </p>
+  
+      <button (click)="addToFavorites(hero)" class="float-right" mat-flat-button color="primary">Add to favorites</button>
+    </div>
+
+  </div>
+  <div class="related-comics">
+      <h6>Related comics</h6>
+      <ul class="clearfix">
+        <li *ngFor="let comic of hero?.comics?.items.slice(0, 4)" [title]="comic.name">
+          {{comic.name}}
+        </li>
+      </ul>
+  </div>
+</mat-card>

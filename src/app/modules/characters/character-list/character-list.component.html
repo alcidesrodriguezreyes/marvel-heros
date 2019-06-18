@@ -1,0 +1,9 @@
+<h3 class="list-title"><img src="../../../../assets/characters.png" class="icon" /> Characters</h3>
+
+<div class="list">
+  <div class="row" myMatchHeight="hero-card">
+    <div class="col-sm-6 hero-cell" *ngFor="let hero of heroList">
+      <app-character-list-item [hero]="hero"></app-character-list-item>
+    </div>
+  </div>
+</div>
